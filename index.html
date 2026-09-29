@@ -38,7 +38,7 @@ function placeOrder(){if(!cname.value.trim()||!phone.value.trim()||!addr.value.t
       render();
     }
   } catch (e) {
-    console.error('Supabase 商品載入失敗：', e);
+    alert('Supabase 商品載入失敗：' + e.message);
   }
 })();
 </script></body></html>
